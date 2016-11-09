@@ -1,0 +1,4 @@
+# copy Dockerfile to google cloud shell
+docker build -t appexp1 .
+docker tag appexp1 us.gcr.io/notary-depot/jn-appimage
+gcloud docker -- push us.gcr.io/notary-depot/jn-appimage
