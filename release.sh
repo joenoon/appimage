@@ -1,4 +1,5 @@
 #!/bin/bash
 
-docker build --rm=true -t joenoon/appimage:v2 .
-docker push joenoon/appimage:v2
+v=v20170527a
+docker build --rm=true -t joenoon/appimage:"$v" .
+docker push joenoon/appimage:"$v"
