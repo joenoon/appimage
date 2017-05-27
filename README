@@ -1,0 +1,5 @@
+# copy Dockerfile to google cloud shell
+set -e \
+&& docker build -t tmpimage . \
+&& docker tag tmpimage us.gcr.io/notary-depot/jn-appimage:node7ruby2.4.1 \
+&& gcloud docker -- push us.gcr.io/notary-depot/jn-appimage:node7ruby2.4.1
