@@ -6,6 +6,7 @@ ENV HOME /root
 ENV SHELL /bin/bash
 ENV LANG en_US.UTF-8
 ENV LC_ALL en_US.UTF-8
+ENV PATH "$HOME/.yarn/bin:$PATH"
 
 ADD https://github.com/Yelp/dumb-init/releases/download/v1.2.0/dumb-init_1.2.0_amd64 /usr/local/bin/dumb-init
 RUN chmod +x /usr/local/bin/dumb-init
